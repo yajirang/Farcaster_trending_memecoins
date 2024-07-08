@@ -1,16 +1,22 @@
 {
-  "name": "Farcaster trending memecoins",
-  "version": "0.1.0",
+  "name": "dune-frames",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "frog vercel-build",
+    "dev": "frog dev",
+    "deploy": "vercel"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.4"
+    "@cowprotocol/ts-dune-client": "^0.0.2",
+    "dotenv": "^16.4.5",
+    "frog": "^0.4.7",
+    "hono": "^4",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3",
+    "vercel": "^32.4.1"
   }
 }
